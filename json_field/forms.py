@@ -2,6 +2,8 @@ try:
     import json
 except ImportError:  # python < 2.6
     from django.utils import simplejson as json
+
+from django.forms import fields
 try:
     from django.forms import utils as util
 except ImportError:
